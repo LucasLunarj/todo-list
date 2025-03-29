@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    border-top: 1px solid var(--gray-400);
+    margin-top: 24px;
+    border-radius: 8px;
+    gap: 16px;
+    & img{
+        margin-top: 64px;
+        width:56px ;
+        height:56px ;
+    }
+
+    & p{
+        font-weight: 700;
+        color: var(--gray-300);
+    }
+    & span{
+        font-weight: 400;
+        color: var(--gray-300);
+    }
+}
+

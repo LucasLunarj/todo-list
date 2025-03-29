@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  width: 100%;
+
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+
+  border-radius: 8px;
+  margin-bottom: 12px;
+
+  div:first-child {
+    display: flex;
+    gap: 12px;
+
+    & svg:first-child {
+      fill: var(--blue);
+      cursor: pointer;
+    }
+    & svg:first-child:hover {
+      opacity: 0.8;
+    }
+  }
+
+  & p {
+    color: var(--gray-100);
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+.taskCompleted {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.unchecked {
+  width: 17px;
+  height: 17px;
+  border: 2px solid var(--blue);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: ease 0.2s;
+}
+.unchecked:hover {
+  background-color: var(--gray-400);
+}
+
+.removeIcon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  & svg {
+    fill: var(--gray-300);
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.removeIcon:hover {
+  border-radius: 4px;
+  background-color: var(--gray-400);
+  width: 24px;
+  height: 24px;
+  & svg {
+    fill: var(--danger);
+    transition: ease 0.2s;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 46rem;
+    height: 4.6rem;
+  }
+}

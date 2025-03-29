@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+    flex-direction: column;
+  margin-top: 200px;
+  width: 100%;
+  display: flex;
+  margin: 230px auto;
+}
+
+.taskbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  width: 100%;
+
+  & div {
+    display: flex;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 0.87rem;
+
+   & span{
+        background-color: var(--gray-400);
+        padding: 0 8px;
+        border-radius: 999px;
+        color: var(--gray-200);
+        font-size: 0.75rem;
+    }
+  }
+
+    & div:first-child {
+        color: var(--blue);
+    }
+
+    & div:last-child {
+        color: var(--purple);
+    }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 46rem;
+  }
+}
